@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 14vh;
+}
+
+body{
+    /* background-image: url("https://as2.ftcdn.net/jpg/02/40/63/55/220_F_240635575_EJifwRAbKsVTDnA3QE0bCsWG5TLhUNEZ.jpg");
+    background-size: cover; */
+    user-select: none;
+    background-color: #aadcf3c0;
+
+}
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 20px 15% 20px 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+i{
+    margin-right: 4%;
+}
+
+nav{
+    padding: 20px 7% 20px 10%;
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-right: 20%;
+}
+
+h1{
+    margin-top: 15px;
+    text-align: center;
+    color: #d4d4d4;
+}
+nav li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    width: 100px;
+
+}
+.contact{
+    position: bsolute;
+    width: 50ch;
+}
+nav li:hover{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.home-container{
+    background-color: white;
+    height: 450px;
+    width: 80%;
+    margin: 14% 0 3.5% 0;
+    border-radius: 10px;
+    padding: 5% 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-container{
+    background-color: rgb(255, 255, 255);
+    height: 50%;
+    width: 80%;
+    margin: 3.5% 0%;
+    border-radius: 10px;
+    padding: 5% 10%;
+
+}
+.portfolio-container{
+    background-color: rgb(255, 255, 255);
+    height: 150vh;
+    width: 80%;
+    margin: 3.5% 0%;
+    border-radius: 10px;
+    padding: 3% 7%;
+    background-image: url();
+}
+
+.project-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 50vh;
+    padding: 3%;
+    width: 65vw;
+    margin-top: 1%;
+    margin-bottom: 8%;
+
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3%;
+    padding: 1% 2%;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: rgba(17, 25, 40, 0.107);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    overflow: hidden;
+    background-image: url(https://img.freepik.com/free-photo/weathered-concrete-surface-wallpaper-background_53876-128504.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: fade 2s 1;
+}
+@keyframes fade{
+    0%{
+        opacity: 0%;
+        margin-left: 50px;
+    }
+    100%{
+        margin-left: 0px;
+        opacity: 100%;
+    }
+}
+.project h4{
+    text-align: center;
+    margin: 2% 0 4% 0;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.project p{
+    font-size: 12px;
+    text-align: justify;
+}
+.project-links{
+    margin-top: 6.5%;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    color: #2a31b6;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.techno{
+    margin-top: 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #2a31b6;
+    font-size: 12.5px;
+    letter-spacing: 1px;
+}
+.techno:hover{
+    text-decoration: underline 1px #000cfa;
+    color: #000cfa;
+
+}
+.project a:hover{
+    transform: scale(1.1);
+}
+.project a i{
+    margin-left: 5%;
+}
+.project img{
+    height: 15vh;
+    border-radius: 10px;
+    margin-bottom: 7%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.project-container:hover > .project:not(:hover){
+    filter: blur(4px);
+} 
+.project:hover{
+    transform: scale(1.1);
+    cursor: default;
+    width: 17vw;
+    height: 48vh;
+}
+.ex:hover{
+    transform: scale(1.1);
+    cursor: default;
+    width: 15vw;
+    height: 45vh;
+}
+.skills-container{
+    background-color: white;
+    height: 95vh;
+    width: 80%;
+    margin: 3.5% 0%;
+    border-radius: 10px;
+    padding: 3% 15%;
+
+}
+
+.port-head{
+    font-size: x-large;
+    text-align: center;
+    color: rgb(73, 73, 73);
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+.port-head:hover{
+    color: rgb(38, 38, 38);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.side-head{
+    font-size: 22px;
+    color: #2a31b6;
+    display: inline-block;
+}
+.side-head:hover{
+    color: #020987;
+    cursor: pointer;    
+}
+.skills-container ul{
+    list-style-type: none;
+    margin-top: 0%;
+}
+.skills-container ul li{
+    padding: 1.4%;
+}
+.bar{
+    background-color: #343434;
+    display: block;
+    overflow: hidden;
+    height: 15px;
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-top: 0.2%;
+}
+.skill-name{
+    margin-left: 2%;
+
+}
+.skill-name:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.skill-name:hover~.bar{
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.bar .level{
+    height: 15px;
+    float: left;
+    /* background-color: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%); */
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+}
+.hint{
+    position: relative;
+    left: 180px;
+    top: -45px;
+    opacity: 0%;
+    background-color: rgba(90, 90, 90, 0.171);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.skill-name:hover~.hint{
+    opacity: 80%;
+    transition-delay: 0.2s;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a img{
+    height: 30vh;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: slide 1.5s 1;
+}
+@keyframes slide{
+    0%{
+        margin-right: 40px;
+        opacity: 0;
+
+    }
+    100%{
+        margin-left: 0;
+        opacity: 100%;
+    }
+}
+.name-container p{
+    color: rgb(56, 55, 55);
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-points{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.about-lines{
+    margin-top: 2%;
+    color: rgb(85, 84, 84);
+}
+.design{
+    margin-top: 8px;
+    margin-right: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 31ch;
+    border-right: 3px solid;
+    animation: type 2s steps(31), blink 0.5s step-end infinite alternate;
+}
+@keyframes type{
+    from{
+        width: 0;;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+h2{
+    font-size: 35px;
+}
+
+h2:hover{
+    color: #2a31b6;
+    cursor: pointer;
+
+}
+.about-head{
+    margin-bottom: 2%; 
+    color: rgb(73, 73, 73);
+    display: inline-block;
+    font-size: 27px;
+}
+.about-head:hover{
+    text-decoration: underline 2px;
+    color: #343434;
+    cursor: pointer;
+    font-size: 27.2px;
+}
+
+h1:hover{
+    font-size: 32.2px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+a img:hover{
+    height: 30.3vh;
+    cursor: pointer;
+    transition: 0.1s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.contact i:hover {
+    transform: scale(1.5);
+}
+
+.ln:hover{
+    color: #ffffff;
+}
+.html{
+    width:85%;
+    animation: html 3s;
+}
+.css{
+    width: 70%;
+    animation: css 3s;
+}
+.js{
+    width: 60%;
+    animation: js 3s;
+}
+.python{
+    width: 75%;
+    animation: python 3s;
+}
+.mysql{
+    width: 45%;
+    animation: mysql 3s;
+}
+.bootstrap{
+    width: 40%;
+    animation: bootstrap 3s;
+}
+
+.footer{
+    background-color: rgba(71, 71, 71, 0.4);
+    width: 100%;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    padding: 40px 23% 40px 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bottom-left{
+    text-align: center;
+}
+.footer h2 {
+    font-size: 30px;
+}
+.footer h2:hover {
+    transform: scale(1.03);
+    color: #000000;
+}
+.bottom-left h2{
+    margin-bottom: 30px;
+}
+.bottom-left a{
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.bottom-left a:hover{
+    background-color: black;
+    color: white;
+}
+.bottom-right{
+    display: flex;
+}
+.bottom-right .bin:hover{
+    text-decoration: underline 2px ;
+}
+.arr{
+    display: flex;
+    align-items: center;
+}
+
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes python{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes bootstrap{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes mysql{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 45%;
+    }
+}

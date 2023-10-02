@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav check</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="top-heading">
+            <h1 >Personal  Portfolio</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">          
+                <a href="#home" onclick="skillClick()"><li href="home" class="home">Home</li></a>
+                <a href="#about"><li class="about">about</li></a>
+                <a href="#skills" onclick="skillClick()"><li class="skills">Skills</li></a>
+                <a href="#port" onclick="skillClick()"><li id="portfolio" class="portfolio">portfolio</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div id="home" class="container">
+        <div id = "hm" class="home-container">
+            <div class="home-content">
+                <div style="" class="name-container">
+                    <p>Hi I am,</p>
+                    <h2>Naveen Rajan N</h2>
+                    <p class="design">Student | Junior Web Developer | Intern</p>
+                </div>
+                
+                <div style="margin-top: 8%;" class="contact">
+                    <a href="https://www.linkedin.com/in/nrmd-naveen/" class="ln" ><i class="fa-brands fa-linkedin fa-xl" style="color: #000000;"></i></a>
+                    <a href="https://github.com/nrmd-naveen"><i class="fa-brands fa-github fa-xl" style="color: #000000;"></i></a>
+                    <a href="mailto:nrmdnaveenrajan@gmail.com"><i class="fa-solid fa-envelope fa-xl" style="color: #000000;"></i></a>
+                    <a href="https://x.com/Naveen_nrmd?t=lpAM-qs79vLRbySB0kPRog&s=09"><i class="fa-brands fa-x-twitter fa-xl" style="color: #000000;"></i></a>
+                    <a href="https://t.me/nrmdnaveen"><i class="fa-brands fa-telegram fa-xl" style="color: #000000;"></i></a>
+                    <a href="https://discord.com/channels/@Naveen_nrmd#4625"><i class="fa-brands fa-discord fa-xl" style="color: #000000;"></i></a>
+                    <a href="https://instagram.com/nrmd_naveen"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></a>
+                    
+                </div>
+            </div>
+                <a href="https://www.linkedin.com/in/nrmd-naveen/">
+                    <img src="profile-pic.png"  alt="Profile Pic">
+                </a>
+            </div>
+            <div id="about" class="about-container">
+                <h3 class="about-head">About Me</h3>
+                <ul class="about-points">
+                    <li class="about-lines">I'm a dedicated and forward-thinking web developer with a passion for creating immersive digital experiences. Through a combination of creativity and technical expertise, I bring websites to life, focusing on responsive design and user-friendly interfaces.</li>
+                    <li class="about-lines">As a lifelong learner, I'm constantly expanding my skill set to stay at the forefront of web development trends.</li>
+                    <li class="about-lines">As a passionate 2nd-year Computer Science Engineering student, I'm on a mission to transform my love for technology into real-world solutions. </li>
+                    <li class="about-lines"> Let's connect and collaborate on innovative projects!</li>
+                </ul>
+
+            </div>
+            <div id="skills" class="skills-container">
+                <h3 class="port-head">Skills</h3>
+                <ul>
+                    <li class="skill-points"><h3 class="skill-name"><i id="skill-name" class="fa-brands fa-html5 fa-lg"></i>HTML5</h3>
+                        <span class="bar"><span class="level html"></span></span>
+                        <span class="hint">85%</span>
+                    </li>
+                    <li><h3 class="skill-name"><i class="fa-brands fa-css3-alt fa-lg"></i>CSS</h3>
+                        <span class="bar"><span class="level css"></span></span>
+                        <span class="hint">70%</span>
+                    </li>
+                    <li><h3 class="skill-name"><i class="fa-brands fa-js fa-lg"></i>Java Script</h3>
+                        <span class="bar"><span class="level js"></span></span>
+                        <span class="hint">60%</span>
+                    </li>
+                    <li><h3 class="skill-name"><i class="fa-brands fa-bootstrap fa-lg"></i>Bootstrap</h3>
+                        <span class="bar"><span class="level bootstrap"></span></span>
+                        <span class="hint">40%</span>
+                    </li>
+                    <li><h3 class="skill-name"><i class="fa-brands fa-python fa-lg"></i>Python</h3>
+                        <span class="bar"><span class="level python"></span></span>
+                        <span class="hint">75%</span>
+                    </li>
+                    <li><h3 class="skill-name"><i class="fa-solid fa-database fa-lg"></i>My SQL</h3>
+                        <span class="bar"><span class="level mysql"></span></span>
+                        <span class="hint">45%</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="port" class="portfolio-container">
+                <h3 class="port-head">Portfolio</h3>
+                <h4 class="side-head">Projects</h4>
+                <div class="project-container">
+                    <div  class="project">
+                        <h4 class="project-name">Expense Tracker</h4>
+                        <img src="expense-tracker.png" alt="">
+                        <p>It helps to record and track your daily expenditures, whether it's bus fare, food costs, or any other expenses. It's especially designed to simplify budget management for students.</p>
+                        <a class="project-links" href="https://nrmd-naveen.github.io/Expense_Tracker/">visit website<i class="fa-solid fa-sm fa-arrow-up-right-from-square" style="color: #2a31b6;"></i></a>
+                        <a class="project-links" href="https://lnkd.in/gRMqaFKc">Github link<i class="fa-solid fa-sm fa-arrow-up-right-from-square" style="color: #2a31b6;"></i></a>
+                    </div>
+                    <div class="project">
+                        <h4 class="project-name">Tourism Guide</h4>
+                        <img src="Tourism Guide.png" alt="">
+                        <p> This is a Tourism guide website, which has detailed explanations about the particular tourist place with reference pictures.</p>
+                        <p>( working on it  )</p>
+                        <a class="project-links" href="https://nrmd-naveen.github.io/tourism/">visit website<i class="fa-solid fa-sm fa-arrow-up-right-from-square" style="color: #2a31b6;"></i></a>
+                        <a class="project-links" href="https://github.com/nrmd-naveen/tourism">Github link<i class="fa-solid fa-sm fa-arrow-up-right-from-square" style="color: #2a31b6;"></i></a></a>
+                    </div>
+                    <div class="project">
+
+                        <img src="" alt="">
+                        <p style="text-align: center; font-size: small;"> Coming Soon . . . </p>
+                    </div>
+                
+                </div>
+                <h4 class="side-head">Experience</h4>
+                <div class="project-container">
+                    <div style="padding: 0;" class="project ex">
+                        <img style="height: 23vh; margin-top: 2%;" src="CERTIFICATE_LANDING_PAGE~KPNZMEBAY8E3.jpeg" alt="">
+                        <p style="padding: 0 7%;">It's a Google cerified Python course , which helps me to improve my problem solving skills and to complete hands-on projects in Python Programming.</p>
+                        <a class="project-links" href="https://www.coursera.org/account/accomplishments/certificate/KPNZMEBAY8E3">show credentials<i class="fa-solid fa-sm fa-arrow-up-right-from-square" style="color: #2a31b6;"></i></a>
+                    </div>
+                    <div style="padding: 0;" class="project ex">
+                        <img style="height: 23vh; margin-top: 2%;" src="off-letter.png" alt="">
+                        <p style="padding: 0 7%;">This is a 4 weeks Internship Programme on the domain of Web Development at <a class="techno" href="https://www.technohacks.co.in/">TechnoHacks</a> .</p>
+                        <p>( On Going . . . )</p>
+                        <a class="project-links" href="off-letter.png">show credentials<i class="fa-solid fa-sm fa-arrow-up-right-from-square" style="color: #2a31b6;"></i></a>
+                    </div>
+                    <div style="padding: 0;" class="project ex">
+                        <img src="" alt="">
+                        <p style="text-align: center; font-size: small;"> Coming Soon . . . </p>
+                    </div>
+                
+                </div>
+        </div>
+        <div class="footer">
+            <div class="bottom-left">
+                <h2>Download My CV</h2>
+                <a href="Naveen Rajan CV.pdf">Click Here</a>
+            </div>
+            
+            <div style="margin-right: 0%; margin-left: 5%;" class="bottom-right">
+                <div style="margin-right: 15%; color: darkblue;" class="bin">
+                    <h3 style="font-size: 33px; text-wrap: nowrap; " >Be in</h3>
+                    <h3  style="font-size: 25px; letter-spacing: 1px;">Touch</h3>
+                </div>
+                <div class="arr">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+
+                </div>
+                <div style="margin-left: 20%;" class="cnt">
+                    <h2 style="text-wrap: nowrap;" >Naveen Rajan N</h2>
+                    <div style="margin-top: 5%; margin-left: 8px; width: 50%; text-wrap: nowrap;" class="contact">
+                        <a href="https://www.linkedin.com/in/nrmd-naveen/" class="ln" ><i class="fa-brands fa-linkedin fa-xl" style="color: #000000;"></i></a>
+                        <a href="https://github.com/nrmd-naveen"><i class="fa-brands fa-github fa-xl" style="color: #000000;"></i></a>
+                        <a href="mailto:nrmdnaveenrajan@gmail.com"><i class="fa-solid fa-envelope fa-xl" style="color: #000000;"></i></a>
+                        <a href="https://x.com/Naveen_nrmd?t=lpAM-qs79vLRbySB0kPRog&s=09"><i class="fa-brands fa-x-twitter fa-xl" style="color: #000000;"></i></a>
+                        <a href="https://t.me/nrmdnaveen"><i class="fa-brands fa-telegram fa-xl" style="color: #000000;"></i></a>
+                        <a href="https://discord.com/channels/@Naveen_nrmd#4625"><i class="fa-brands fa-discord fa-xl" style="color: #000000;"></i></a>
+                        <a href="https://instagram.com/nrmd_naveen"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+<script src="https://kit.fontawesome.com/eb7c27f75c.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</html>
